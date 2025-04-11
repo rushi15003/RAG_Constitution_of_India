@@ -1,0 +1,21 @@
+# Virtual Environment
+my_venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Large model files
+model/*.gguf
+
+
+# Data files (if they're large)
+
+
+# Environment variables
+.env
+
+# IDE specific files
+.vscode/
+.idea/

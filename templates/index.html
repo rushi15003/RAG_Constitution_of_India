@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🧠 Constitution Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <h2>🇮🇳 Constitution of India Chatbot</h2>
+        <div class="chat-box" id="chat-box">
+            {% for qa in chat_history %}
+                <div class="user-msg"><strong>🧑 You:</strong> {{ qa.question }}</div>
+                <div class="bot-msg"><strong>🤖 Bot:</strong> {{ qa.answer }}</div>
+            {% endfor %}
+        </div>
+
+        <form method="POST" class="chat-form">
+            <input type="text" name="question" placeholder="Ask about the Constitution..." required autocomplete="off">
+            <button type="submit">Send</button>
+        </form>
+        
+        <form action="{{ url_for('clear') }}" method="GET" class="clear-form">
+            <button type="submit" class="clear-btn">🗑️ Clear Chat</button>
+        </form>
+    </div>
+</body>
+</html>

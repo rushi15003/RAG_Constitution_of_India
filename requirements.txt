@@ -1,0 +1,9 @@
+tqdm
+bs4
+langchain
+qdrant-client
+ctransformers
+llama-cpp-python
+flask
+transformers==4.36.2
+sentence_transformers
