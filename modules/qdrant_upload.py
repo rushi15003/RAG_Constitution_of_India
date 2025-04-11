@@ -24,7 +24,7 @@ for idx, item in enumerate(embedded_data):
 client = QdrantClient(host="localhost", port=6333)
 
 # Define collection name and vector size (based on your model)
-collection_name = "rag"
+collection_name = "your_collection_name"
 vector_size = len(embedded_data[0]["embedding"])
 
 # Create collection if not exists
