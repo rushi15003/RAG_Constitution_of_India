@@ -54,7 +54,7 @@ This project combines vector search and generative AI to build a conversational 
    ```bash
    pip install -r requirements.txt
    
-## Note : Run all the python files located in modules directory one by one(scraping.py->chunking.py->embedding.py->qdrant_init.py->qdrant_upload.py)  
+**Note** : Run all the python files located in modules directory one by one(scraping.py->chunking.py->embedding.py->qdrant_init.py->qdrant_upload.py)  
 
 4. **Run the Application**:
    ```bash
