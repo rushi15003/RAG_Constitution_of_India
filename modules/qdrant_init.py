@@ -1,7 +1,7 @@
 import subprocess
 import time
 
-CONTAINER_NAME = "lucid_wu"
+CONTAINER_NAME = "your_container_name"
 
 def start_qdrant_container():
     try:
